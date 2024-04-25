@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mis peliculas</title>
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Mis peliculas</h1>
+      <ul>
+        <li><a href="index.html" class="btn btn-lg disabled">Mis Peliculas</a></li>
+        <li><a href="./pages/sobremi.html">A Sobre mi</a></li>
+        <li><a href="./pages/historiadelcine.html">A Historia del Cine</a></li>
+        <li><a href="./pages/addmovieform.htm">Agregar Pelicula</a></li>
+      </ul>
+    </header>
+    <main class="shadow-lg p-2 rounded">
+      <h1>Mis peliculas</h1>
+      <div id="filtrarDiv">
+        <button id="mostrartodas" type="button"class="btn btn-lg me-3 btn-light active"aria-pressed="true">Mostrar todas</button>
+        <button id="borrarBtn" type="button" class="btn btn-lg btn-danger me-4">Borrar todo</button>
+        <div>
+          <input type="text" name="buscarMovie" id="buscarMovie" placeholder="Buscar por Titulo" >
+          <button id="buscarBtn" type="button" class="btn btn-lg btn-light me-4">Buscar</button>
+        </div>
+        <div>
+          <input type="text" name="buscarDirector" id="buscarDirector" placeholder="Buscar por Director">
+          <button id="buscarDirectorBtn" type="button" class="btn btn-lg btn-light me-4">Buscar</button>
+        </div>
+      </div>
+      <section class="sectionPeliculas">
+        <div id="contenedorTarjetas"></div>
+      </section>
+    </main>
+    <footer>
+      <p>Página hecha por Gabriel Gotlib</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./public/bundle.js"></script>
+  </body>
+</html>

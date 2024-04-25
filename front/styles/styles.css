@@ -1,0 +1,250 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* para todos el mismo Body, Header, main y h1 */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: linear-gradient(to bottom, black, rgb(8, 1, 105));
+  background-attachment: fixed;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: left;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  height: auto;
+  background: linear-gradient(to right, black, rgb(8, 1, 105));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:left;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(138, 132, 132, 1);
+
+  h1 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 30px;
+    margin: 0;
+    width: 20%;
+  }
+
+  ul {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-wrap: nowrap;
+    align-items: center;
+    justify-self: left;
+
+    li {
+      margin: 10px 10px;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: rgba(8, 1, 105, 0.644);
+      }
+
+      a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}
+
+main {
+  padding: 10px 20px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 15px;
+  margin: 0;
+}
+
+footer {
+  margin-top: auto;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: rgb(189, 184, 184);
+  height: auto;
+  text-align: right;
+  height: 30px;
+}
+
+/* ----------- hasta aca -----------*/
+
+/* ----- estilos para sobremi ----*/
+.sobreMi p {
+  margin: 30px;
+}
+
+.tecnologias ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+
+  li {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    padding: 5px 20px;
+    text-align: center;
+    margin: 15px;
+    padding: 10px 20px;
+    width: 500px;
+    font-size: larger;
+
+    img {
+      margin-top: 15px;
+      width: 90%;
+      height: auto;
+      border-radius: 20px;
+    }
+  }
+
+  li:hover {
+    box-shadow: 0px 0px 10px rgba(138, 132, 132, 1);
+  }
+}
+/* ----------- hasta aca -----------*/
+
+/*----- Estilos para Mis Peliculas----  */
+
+#filtrarDiv {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 1rem;
+  margin-left: 1rem;
+  justify-content: start;
+  
+  div {
+    align-content: baseline;
+    justify-content: baseline;
+  }
+
+  input {
+    border-radius: 5px;
+    font-size:x-large;
+    margin-right: 10px;
+    height: 48px;
+  }
+
+  #mostrartodas:hover {
+    scale: 1.1;
+  }
+  #buscarBtn:hover {
+    scale: 1.1;
+  }
+  #borrarBtn:hover {
+    scale: 1.1;
+  }
+  #buscarDirectorBtn:hover {
+    scale: 1.1;
+  }
+}
+
+.sectionPeliculas {
+  padding: 30px 40px;
+  border-radius: 40px;
+  margin: 20px;
+  h2 {
+    padding: 10px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+}
+
+#contenedorTarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+  gap: 40px;
+  justify-content: left;
+  margin: 0 auto;
+
+  .tarjeta {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: 300;
+      margin: 10px;
+      color: white;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    img {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      max-width: 100%;
+      border-radius: 20px;
+      height: auto;
+    }
+
+    img:hover {
+      box-shadow: 0px 0px 10px rgba(138, 132, 132, 1);
+    }
+    p {
+      margin-bottom: 5px;
+    }
+  }
+
+  .tarjeta:hover {
+    box-shadow: 0px 0px 20px rgba(138, 132, 132, 1);
+  }
+}
+/* ----------- hasta aca -----------*/
+/* -------- Estilos para Agregar Pelicula------- */
+
+#agregarForm {
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  /* justify-content: center; */
+  align-items: start;
+  width: 100%;
+  row-gap: 1rem;
+
+  input, textarea {
+    min-width: 500px;
+    width: 40%;
+    border-radius: 8px;
+  }
+}
+/* -------- Hasta aca ------- */
