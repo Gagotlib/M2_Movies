@@ -1,6 +1,8 @@
 # M2_Movies
+
+
 little app using:
 
-HTML, JavaScript and CSS in the FontEnd
+- HTML, JavaScript and CSS in the FontEnd
 
-MongoDB in the BackEnd  
+- MongoDB, mongoose in the BackEnd  
