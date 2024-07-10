@@ -6,6 +6,8 @@ whit Terminal situated in the **back** folder, run `npm install` and then  `npm 
 
 whit Terminal situated in the **front** folder, run `npm install` and then  `npm start` 
 
+link to demo: [youtube demo video](https://www.youtube.com/watch?v=oqcD99u3UXI)
+
 ### Frontend
 
 - HTML
